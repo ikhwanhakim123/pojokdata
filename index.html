@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pojok Data Desa Pegajahan</title>
+<link href="{{DATA:IMAGE:IMAGE_11}}" rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -119,7 +120,6 @@
             transform: translateY(-4px);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
         }
-        /* Mobile Interactivity Scale Effect */
         .interactive-element:active {
             transform: scale(0.96);
             transition: transform 0.1s ease;
@@ -133,6 +133,11 @@
         ::-webkit-scrollbar-thumb {
             background: #bec9c2;
             border-radius: 4px;
+        }
+        /* Active Nav Link Styles */
+        .nav-link.active {
+            color: #065F46 !important;
+            font-weight: 700 !important;
         }
     </style>
 </head>
@@ -149,12 +154,12 @@
 </a>
 </div>
 <div class="flex items-center gap-6">
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors font-bold active:scale-110 transition-transform" href="#hero">Beranda</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#sejarah">Sejarah</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#sosial-budaya">Sosial</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#ekonomi">Ekonomi</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#kampung-kb">Kampung KB</a>
+<nav class="hidden md:flex items-center gap-8" id="desktop-nav">
+<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#hero">Beranda</a>
+<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#sejarah">Sejarah</a>
+<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#sosial-budaya">Sosial</a>
+<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#ekonomi">Ekonomi</a>
+<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#kampung-kb">Kampung KB</a>
 </nav>
 </div>
 </header>
@@ -166,36 +171,36 @@
 <span class="material-symbols-outlined">close</span>
 </button>
 </div>
-<nav class="space-y-2 px-4">
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#hero" onclick="toggleDrawer()">
+<nav class="space-y-2 px-4" id="mobile-nav">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#hero" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">home</span><span class="font-title-md text-title-md">Beranda</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#sejarah" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#sejarah" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">history</span><span class="font-title-md text-title-md">Sejarah</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#sosial-budaya" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#sosial-budaya" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">diversity_3</span><span class="font-title-md text-title-md">Sosial Budaya</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#ekonomi" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#ekonomi" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">payments</span><span class="font-title-md text-title-md">Ekonomi</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#infrastruktur" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#infrastruktur" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">foundation</span><span class="font-title-md text-title-md">Infrastruktur</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#pemerintahan" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#pemerintahan" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">account_balance</span><span class="font-title-md text-title-md">Pemerintahan</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#demografis" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#demografis" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">bar_chart</span><span class="font-title-md text-title-md">Demografis</span>
 </a>
-<a class="flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#kampung-kb" onclick="toggleDrawer()">
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#kampung-kb" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">family_restroom</span><span class="font-title-md text-title-md">Kampung KB</span>
 </a>
 </nav>
 </aside>
 <main class="mt-16 pt-stack-md max-w-container-max mx-auto px-gutter pb-stack-lg space-y-stack-lg">
 <!-- Hero Section -->
-<section class="relative rounded-xl overflow-hidden min-h-[400px] flex items-center bg-primary-container" id="hero">
+<section class="relative rounded-xl overflow-hidden min-h-[400px] flex items-center bg-primary-container section-scroll" id="hero">
 <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white">
 <span class="inline-block bg-data-orange text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full mb-4">Profil Desa Pegajahan</span>
 <h1 class="font-display-lg text-display-lg md:text-display-lg mb-4 leading-tight">Selamat Datang di Pojok Data Kampung KB Berlian</h1>
@@ -234,7 +239,7 @@
 </div>
 </section>
 <!-- Sejarah Desa -->
-<section class="space-y-stack-md scroll-mt-20" id="sejarah">
+<section class="space-y-stack-md scroll-mt-20 section-scroll" id="sejarah">
 <div class="flex items-center gap-4">
 <span class="h-8 w-1.5 bg-admin-emerald rounded-full"></span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Sejarah Desa</h2>
@@ -267,7 +272,7 @@
 </div>
 </section>
 <!-- Kondisi Sosial Budaya -->
-<section class="space-y-stack-md scroll-mt-20" id="sosial-budaya">
+<section class="space-y-stack-md scroll-mt-20 section-scroll" id="sosial-budaya">
 <div class="flex items-center gap-4">
 <span class="h-8 w-1.5 bg-info-blue rounded-full"></span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Kondisi Sosial Budaya</h2>
@@ -291,7 +296,7 @@
 </div>
 </section>
 <!-- Kondisi Ekonomi -->
-<section class="space-y-stack-md scroll-mt-20" id="ekonomi">
+<section class="space-y-stack-md scroll-mt-20 section-scroll" id="ekonomi">
 <div class="flex items-center gap-4">
 <span class="h-8 w-1.5 bg-data-orange rounded-full"></span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Kondisi Ekonomi</h2>
@@ -359,7 +364,7 @@
 </div>
 </section>
 <!-- Infrastruktur -->
-<section class="space-y-stack-md scroll-mt-20" id="infrastruktur">
+<section class="space-y-stack-md scroll-mt-20 section-scroll" id="infrastruktur">
 <div class="flex items-center gap-4">
 <span class="h-8 w-1.5 bg-admin-emerald rounded-full"></span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Fasilitas &amp; Infrastruktur</h2>
@@ -410,7 +415,7 @@
 </div>
 </section>
 <!-- Gambaran Umum Demografis -->
-<section class="space-y-stack-md scroll-mt-20" id="demografis">
+<section class="space-y-stack-md scroll-mt-20 section-scroll" id="demografis">
 <div class="flex items-center gap-4">
 <span class="h-8 w-1.5 bg-info-blue rounded-full"></span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Demografis Detail</h2>
@@ -453,7 +458,7 @@
 </div>
 </section>
 <!-- Data Kampung KB Berlian -->
-<section class="space-y-stack-md scroll-mt-20" id="kampung-kb">
+<section class="space-y-stack-md scroll-mt-20 section-scroll" id="kampung-kb">
 <div class="flex items-center gap-4">
 <span class="h-8 w-1.5 bg-data-orange rounded-full"></span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Pojok Data Kampung KB Berlian</h2>
@@ -529,7 +534,7 @@
 </div>
 </div>
 </section>
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch scroll-mt-20" id="pemerintahan">
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch scroll-mt-20 section-scroll" id="pemerintahan">
 <div class="bg-surface-container-low rounded-2xl p-8 border border-border-subtle flex flex-col justify-center bento-card interactive-element">
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Lokasi &amp; Pemerintahan</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
@@ -577,7 +582,7 @@
 <footer class="w-full py-stack-md px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-sm bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant dark:border-outline">
 <div class="flex flex-col items-center md:items-start text-center md:text-left">
 <h3 class="font-title-md text-title-md font-semibold text-on-surface">Pojok Data Desa Pegajahan</h3>
-<p class="font-label-sm text-label-sm dark:text-outline-variant mt-1">© 2025 Pojok Data Desa Pegajahan. Tim KKN Universitas Negeri Medan.</p>
+<p class="font-label-sm text-label-sm dark:text-outline-variant mt-1">© 2024 Pojok Data Desa Pegajahan. Tim KKN Universitas Negeri Medan.</p>
 </div>
 <div class="flex flex-wrap justify-center gap-6">
 <a class="text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-opacity font-label-sm interactive-element" href="#hero">Beranda</a>
@@ -590,7 +595,7 @@
 <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.25-1.33 2.1-.1.7.1 1.41.53 1.98.5.73 1.36 1.22 2.25 1.3 1.19.14 2.45-.39 3.09-1.44.25-.43.38-.9.38-1.4.01-4.75.01-9.51.01-14.26z"></path></svg>
 </a>
 <a aria-label="Instagram" class="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-border-subtle text-admin-emerald hover:text-info-blue transition-all interactive-element" href="https://www.instagram.com/kknpegajahan25?igsh=MXZ2a3p4NzdteGZk" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.558.217.957.477 1.377.896.419.42.679.819.896 1.377.163.422.358 1.057.412 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.217.558-.477.957-.896 1.377-.42.419-.819.679-1.377.896-.422.163-1.057.358-2.227.412-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.558-.217-.957-.477-1.377-.896-.419-.42-.679-.819-.896-1.377-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.558.477-.957.896-1.377.42-.419.819-.679 1.377-.896.422-.163 1.057-.358 2.227-.412 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.148.26-2.911.557-.79.307-1.459.718-2.126 1.384-.666.667-1.077 1.335-1.384 2.126-.297.763-.5 1.634-.557 2.911-.058 1.28-.072 1.688-.072 4.947s.014 3.668.072 4.947c.057 1.277.26 2.148.557 2.911.307.79.718 1.459 1.384 2.126.667.666 1.335 1.077 2.126 1.384.763.297 1.634.5 2.911.557 1.28.058 1.688.072 4.947.072s3.668-.014 4.947-.072c1.277-.057 2.148-.26 2.911-.557.79-.307 1.459-.718 2.126-1.384.666-.667 1.077-1.335 1.384-2.126.297-.763.5-1.634.557-2.911.058-1.28.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.057-1.277-.26-2.148-.557-2.911-.307-.79-.718-1.459-1.384-2.126-.667-.666-1.335-1.077-2.126-1.384-.763-.297-1.634-.5-2.911-.557-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.558.217.957.477 1.377.896.419.42.679.819.896 1.377.163.422.358 1.057.412 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.217.558-.477.957-.896 1.377-.42.419-.819.679-1.377.896-.422.163-1.057.358-2.227.412-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.558-.217-.957-.477-1.377-.896-.419-.42-.679-.819-.896-1.377-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.558.477-.957.896-1.377.42-.419.819-.679 1.377-.896.422-.163 1.057-.358 2.227-.412 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.148.26-2.911.557-.79.307-1.459.718-2.126 1.384-.666.667-1.077 1.335-1.384 2.126-.297.763-.5 1.634-.557 2.911-.058 1.28-.072 1.688-.072 4.947s.014 3.668.072 4.947c.057 1.277.26 2.148.557 2.911.307.79.718 1.459 1.384 2.126.667.666 1.335 1.077 2.126 1.384.763.297 1.634.5 2.911.557 1.28.058 1.688.072 4.947.072s3.668-.014 4.947-.072c1.277-.057 2.148-.26 2.911-.557.79-.307 1.459-.718 2.126-1.384.666-.667 1.077-1.335 1.384-2.126.297-.763.5-1.634.557-2.911.058-1.28.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.057-1.277-.26-2.148-.557-2.911-.307-.79-.718-1.459-1.384-2.126-.667-.666-1.335-1.077-2.126-1.384-.763-.297-1.634-.5-2.911-.557-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
 </a>
 </div>
 </footer>
@@ -625,6 +630,49 @@
         }
     }
 
+    // Scroll Spy Implementation
+    function updateActiveNavLink() {
+        const sections = document.querySelectorAll('.section-scroll');
+        const desktopNavLinks = document.querySelectorAll('#desktop-nav .nav-link');
+        const mobileNavLinks = document.querySelectorAll('#mobile-nav .nav-link-mobile');
+        
+        let currentSectionId = "";
+        const scrollPosition = window.scrollY + 100; // Offset for header
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+
+        // Specific cases for sections not in the main "desktop" nav if needed
+        // but generally we map the current ID to the links
+
+        desktopNavLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSectionId}`) {
+                link.classList.add('active');
+            }
+        });
+
+        mobileNavLinks.forEach(link => {
+            // Find the child span text container for mobile nav bolding
+            const textSpan = link.querySelector('span:not(.material-symbols-outlined)');
+            link.classList.remove('bg-secondary-container/20');
+            if (textSpan) textSpan.classList.remove('text-admin-emerald', 'font-bold');
+            
+            if (link.getAttribute('href') === `#${currentSectionId}`) {
+                link.classList.add('bg-secondary-container/20');
+                if (textSpan) textSpan.classList.add('text-admin-emerald', 'font-bold');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNavLink);
+    window.addEventListener('load', updateActiveNavLink);
+
     window.addEventListener('resize', () => {
         if (window.innerWidth >= 1024) {
             const drawer = document.getElementById('nav-drawer');
@@ -633,14 +681,23 @@
         }
     });
 
-    // Handle smooth anchor clicks for mobile
+    // Handle smooth anchor clicks
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            if (this.getAttribute('href') !== '#') {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close drawer if open
+                    const drawer = document.getElementById('nav-drawer');
+                    if (drawer.classList.contains('translate-x-0')) {
+                        toggleDrawer();
+                    }
+                }
             }
         });
     });
