@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-
-<html class="light" lang="id"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Pojok Data Desa Pegajahan</title>
-<link href="{{DATA:IMAGE:IMAGE_11}}" rel="icon" type="image/x-icon"/>
+<link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida/AP1WRLsOlVihRQBruISGahl9InvHQlZMEnXoaOCqsHXBrBYwW1XhA8EwZzvmUOkfGBVzkxX2gu-I7a6HHSQT0KC3Add3dC-wa1g8poF9En3zXB0InRNtdFNNB3dA8wuYFUMO5ZhEK0ZMVQgZWiAeV-k9AYb94UwMAYLwzCBc9pfePn7GAAA8OVmZh4M3WImZzXPdzCOHwZ_tiim0hda3nXuSjw8FxVevk8B6eI-Kp5ya0HYVaC9kBjyS13IB5cXA">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -155,7 +153,7 @@
 </div>
 <div class="flex items-center gap-6">
 <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
-<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#hero">Beranda</a>
+<a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform active" href="#hero">Beranda</a>
 <a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#sejarah">Sejarah</a>
 <a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#sosial-budaya">Sosial</a>
 <a class="nav-link text-on-surface-variant dark:text-outline-variant hover:text-info-blue transition-colors active:scale-110 transition-transform" href="#ekonomi">Ekonomi</a>
@@ -172,8 +170,8 @@
 </button>
 </div>
 <nav class="space-y-2 px-4" id="mobile-nav">
-<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#hero" onclick="toggleDrawer()">
-<span class="material-symbols-outlined">home</span><span class="font-title-md text-title-md">Beranda</span>
+<a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element bg-secondary-container/20" href="#hero" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">home</span><span class="font-title-md text-title-md text-admin-emerald font-bold">Beranda</span>
 </a>
 <a class="nav-link-mobile flex items-center gap-4 py-3 px-4 hover:bg-secondary-container/20 rounded-full mx-2 transition-all interactive-element" href="#sejarah" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">history</span><span class="font-title-md text-title-md">Sejarah</span>
@@ -266,7 +264,7 @@
 </div>
 <div class="mt-6">
 <button class="text-info-blue font-bold flex items-center gap-2 hover:gap-3 transition-all interactive-element" id="btn-read-more" onclick="toggleSejarah()">
-<span id="btn-text">Baca Selengkapnya</span> <span class="material-symbols-outlined" id="btn-icon">arrow_forward</span>
+<span id="btn-text" class="">Baca Selengkapnya</span> <span class="material-symbols-outlined" id="btn-icon">arrow_forward</span>
 </button>
 </div>
 </div>
@@ -345,16 +343,16 @@
 <p class="font-label-sm opacity-80 mb-4">Total 1.278 Kepala Keluarga (KK)</p>
 <ul class="space-y-4">
 <li class="flex justify-between items-center border-b border-white/20 pb-2">
-<span>UKM / UMKM</span>
+<span class="">UKM / UMKM</span>
 <span class="font-data-value">400 KK</span>
 </li>
 <li class="flex justify-between items-center border-b border-white/20 pb-2">
-<span>Petani</span>
+<span class="">Petani</span>
 <span class="font-data-value">400 KK</span>
 </li>
 <li class="flex justify-between items-start border-b border-white/20 pb-2">
 <div class="flex flex-col">
-<span>Lainnya</span>
+<span class="">Lainnya</span>
 <span class="text-[10px] opacity-70 leading-tight">PNS, TNI/Polri, Jasa, Karyawan, Buruh, dll</span>
 </div>
 <span class="font-data-value">478 KK</span>
@@ -445,14 +443,14 @@
 <div class="bg-white p-6 rounded-xl border border-border-subtle bento-card interactive-element">
 <h3 class="font-title-md text-title-md mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-info-blue">history_edu</span> Berdasarkan Pendidikan</h3>
 <div class="space-y-3 max-h-[300px] overflow-y-auto pr-2">
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>SD/Sederajat</span><span>1.191</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 26%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>SLTP/Sederajat</span><span>721</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 16%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>SLTA/Sederajat</span><span>1.122</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 25%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>D3</span><span>8</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 1%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>S1</span><span>68</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 2%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>Belum Tamat SD</span><span>480</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 11%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>TK</span><span>10</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 1%"></div></div></div>
-<div class="space-y-1"><div class="flex justify-between text-label-sm"><span>Tidak Sekolah</span><span>883</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 19%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">SD/Sederajat</span><span class="">1.191</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 26%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">SLTP/Sederajat</span><span class="">721</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 16%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">SLTA/Sederajat</span><span class="">1.122</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 25%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">D3</span><span class="">8</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 1%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">S1</span><span class="">68</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 2%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">Belum Tamat SD</span><span class="">480</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 11%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">TK</span><span class="">10</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 1%"></div></div></div>
+<div class="space-y-1"><div class="flex justify-between text-label-sm"><span class="">Tidak Sekolah</span><span class="">883</span></div><div class="w-full bg-surface-container-low rounded-full h-2"><div class="bg-admin-emerald h-full rounded-full" style="width: 19%"></div></div></div>
 </div>
 </div>
 </div>
@@ -473,15 +471,15 @@
 <ul class="space-y-4">
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-data-orange">check_circle</span>
-<span>Pelayanan KB Gratis secara berkala</span>
+<span class="">Pelayanan KB Gratis secara berkala</span>
 </li>
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-data-orange">check_circle</span>
-<span>Bina Keluarga Balita (BKB) &amp; Lansia (BKL)</span>
+<span class="">Bina Keluarga Balita (BKB) &amp; Lansia (BKL)</span>
 </li>
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-data-orange">check_circle</span>
-<span>Pemberdayaan Ekonomi Keluarga (UPPKA)</span>
+<span class="">Pemberdayaan Ekonomi Keluarga (UPPKA)</span>
 </li>
 </ul>
 </div>
@@ -508,15 +506,15 @@
 <h5 class="font-label-sm text-on-surface-variant uppercase tracking-wider mb-3">Kegiatan Kampung KB</h5>
 <div class="space-y-3">
 <div class="pb-2 border-b border-outline-variant/30">
-<div class="flex justify-between font-semibold text-on-surface"><span>BKB (Balita)</span><span class="font-data-value">328 / 132</span></div>
+<div class="flex justify-between font-semibold text-on-surface"><span class="">BKB (Balita)</span><span class="font-data-value">328 / 132</span></div>
 <p class="text-xs text-on-surface-variant">Jumlah Anggota / Kesertaan</p>
 </div>
 <div class="pb-2 border-b border-outline-variant/30">
-<div class="flex justify-between font-semibold text-on-surface"><span>BKR (Remaja)</span><span class="font-data-value">726 / 276</span></div>
+<div class="flex justify-between font-semibold text-on-surface"><span class="">BKR (Remaja)</span><span class="font-data-value">726 / 276</span></div>
 <p class="text-xs text-on-surface-variant">Jumlah Anggota / Kesertaan</p>
 </div>
 <div class="pb-2 border-b border-outline-variant/30">
-<div class="flex justify-between font-semibold text-on-surface"><span>BKL (Lansia)</span><span class="font-data-value">353 / 179</span></div>
+<div class="flex justify-between font-semibold text-on-surface"><span class="">BKL (Lansia)</span><span class="font-data-value">353 / 179</span></div>
 <p class="text-xs text-on-surface-variant">Jumlah Anggota / Kesertaan</p>
 </div>
 <div class="flex justify-between items-center">
@@ -592,10 +590,10 @@
 </div>
 <div class="flex items-center gap-4">
 <a aria-label="TikTok" class="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-border-subtle text-admin-emerald hover:text-info-blue transition-all interactive-element" href="https://www.tiktok.com/@kknpegajahan25?_r=1&amp;_t=ZS-97YWp6K127W" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.25-1.33 2.1-.1.7.1 1.41.53 1.98.5.73 1.36 1.22 2.25 1.3 1.19.14 2.45-.39 3.09-1.44.25-.43.38-.9.38-1.4.01-4.75.01-9.51.01-14.26z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.25-1.33 2.1-.1.7.1 1.41.53 1.98.5.73 1.36 1.22 2.25 1.3 1.19.14 2.45-.39 3.09-1.44.25-.43.38-.9.38-1.4.01-4.75.01-9.51.01-14.26z"></path></svg>
 </a>
 <a aria-label="Instagram" class="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-border-subtle text-admin-emerald hover:text-info-blue transition-all interactive-element" href="https://www.instagram.com/kknpegajahan25?igsh=MXZ2a3p4NzdteGZk" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.558.217.957.477 1.377.896.419.42.679.819.896 1.377.163.422.358 1.057.412 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.217.558-.477.957-.896 1.377-.42.419-.819.679-1.377.896-.422.163-1.057.358-2.227.412-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.558-.217-.957-.477-1.377-.896-.419-.42-.679-.819-.896-1.377-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.558.477-.957.896-1.377.42-.419.819-.679 1.377-.896.422-.163 1.057-.358 2.227-.412 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.148.26-2.911.557-.79.307-1.459.718-2.126 1.384-.666.667-1.077 1.335-1.384 2.126-.297.763-.5 1.634-.557 2.911-.058 1.28-.072 1.688-.072 4.947s.014 3.668.072 4.947c.057 1.277.26 2.148.557 2.911.307.79.718 1.459 1.384 2.126.667.666 1.335 1.077 2.126 1.384.763.297 1.634.5 2.911.557 1.28.058 1.688.072 4.947.072s3.668-.014 4.947-.072c1.277-.057 2.148-.26 2.911-.557.79-.307 1.459-.718 2.126-1.384.666-.667 1.077-1.335 1.384-2.126.297-.763.5-1.634.557-2.911.058-1.28.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.057-1.277-.26-2.148-.557-2.911-.307-.79-.718-1.459-1.384-2.126-.667-.666-1.335-1.077-2.126-1.384-.763-.297-1.634-.5-2.911-.557-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.558.217.957.477 1.377.896.419.42.679.819.896 1.377.163.422.358 1.057.412 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.217.558-.477.957-.896 1.377-.42.419-.819.679-1.377.896-.422.163-1.057.358-2.227.412-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.558-.217-.957-.477-1.377-.896-.419-.42-.679-.819-.896-1.377-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.558.477-.957.896-1.377.42-.419.819-.679 1.377-.896.422-.163 1.057-.358 2.227-.412 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.148.26-2.911.557-.79.307-1.459.718-2.126 1.384-.666.667-1.077 1.335-1.384 2.126-.297.763-.5 1.634-.557 2.911-.058 1.28-.072 1.688-.072 4.947s.014 3.668.072 4.947c.057 1.277.26 2.148.557 2.911.307.79.718 1.459 1.384 2.126.667.666 1.335 1.077 2.126 1.384.763.297 1.634.5 2.911.557 1.28.058 1.688.072 4.947.072s3.668-.014 4.947-.072c1.277-.057 2.148-.26 2.911-.557.79-.307 1.459-.718 2.126-1.384.666-.667 1.077-1.335 1.384-2.126.297-.763.5-1.634.557-2.911.058-1.28.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.057-1.277-.26-2.148-.557-2.911-.307-.79-.718-1.459-1.384-2.126-.667-.666-1.335-1.077-2.126-1.384-.763-.297-1.634-.5-2.911-.557-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
 </a>
 </div>
 </footer>
@@ -702,4 +700,6 @@
         });
     });
 </script>
+
+
 </body></html>
